@@ -1,12 +1,14 @@
 import Woowahan from 'woowahan';
-import HelloView from './views/hello-view';
+import MainView from './views/main/main';
 
 global.$ = global.jQuery = Woowahan.$;
 
-var app = new Woowahan();
+const app = new Woowahan();
 
-app.start({
-  url: '/',
-  container: '#root',
-  view: HelloView
-});
+const siteRouting = [
+  {url: '/', view: MainView, container: '#root'}
+]
+
+const siteRoutingOption = { empty: page => { alert(`${page}는 없는 페이지!!`); } }
+
+app.start(siteRouting, siteRoutingOption);
