@@ -1,0 +1,33 @@
+{
+  "name": "woowahanjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev"  : "webpack-dev-server --config webpack.config.js  --progress --inline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "woowahan": "^0.1.8"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.2",
+    "style-loader": "^0.13.1",
+    "css-loader": "^0.25.0",
+    "html-webpack-plugin": "^2.22.0",
+    "webpack-dev-server": "^1.15.1",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-2": "^6.13.0",
+    "babel-core": "^6.14.0",
+    "babel-loader" : "^6.2.5",
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.1",
+    "eslint-plugin-react": "^6.2.0",
+    "handlebars": "^4.0.3",
+    "handlebars-loader": "^1.1.4"
+  }
+}
